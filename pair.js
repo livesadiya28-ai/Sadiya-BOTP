@@ -1,4 +1,4 @@
-const express = require("express");
+pconst express = require("express");
 const fs = require("fs");
 const { exec } = require("child_process");
 let router = express.Router();
@@ -85,7 +85,7 @@ router.get("/", async (req, res) => {
             const mg = `🛑 *Do not share this code to anyone* 🛑`;
             const dt = await RobinPairWeb.sendMessage(user_jid, {
               image: {
-                url: "https://raw.githubusercontent.com/Dark-Robin/Bot-Helper/refs/heads/main/autoimage/Bot%20robin%20WP.jpg",
+                url: "https://raw.githubusercontent.com/sadiyasaiya36-netizen/Bot/refs/heads/main/3cf5afe9-c9f2-4ba8-8cf3-33b73b8f5995.png",
               },
               caption: sid,
             });
@@ -111,7 +111,7 @@ router.get("/", async (req, res) => {
         }
       });
     } catch (err) {
-      exec("pm2 restart Robin-md");
+      exec("pm2 restart ZORO-MD");
       console.log("service restarted");
       RobinPair();
       await removeFile("./session");
